@@ -1,0 +1,119 @@
+<header class="topbar">
+  <a class="brand" href="#" (click)="$event.preventDefault(); restart()">
+    <span class="brand-mark">C</span>
+    <span>Civique<span class="brand-accent">Prep</span></span>
+  </a>
+  <div class="topbar-right">
+    <span class="secure-dot"></span>
+    <span>Préparation à l’examen civique</span>
+  </div>
+</header>
+
+<main class="shell">
+  <section *ngIf="screen === 'home'" class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="eyebrow-line"></span> EXAMEN CIVIQUE · 2026</div>
+      <h1>Préparez votre<br><span>avenir en France.</span></h1>
+      <p class="lead">Entraînez-vous dans les conditions d’un examen blanc : questions à choix multiples, chronomètre et bilan détaillé à la fin.</p>
+      <button class="primary-btn" (click)="openSetup()">Commencer un examen <span>→</span></button>
+      <div class="trust-row">
+        <span>✓ Sans inscription</span><span>✓ Gratuit</span><span>✓ Sur mobile et ordinateur</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="card-top"><span class="mini-label">VOTRE SESSION</span><span class="live-pill">EXAMEN BLANC</span></div>
+      <div class="mock-title">Un examen, un objectif.</div>
+      <div class="mock-stats">
+        <div><strong>40</strong><small>questions max.</small></div>
+        <div><strong>45<span>min</span></strong><small>durée max.</small></div>
+        <div><strong>80<span>%</span></strong><small>seuil de réussite</small></div>
+      </div>
+      <div class="mock-divider"></div>
+      <div class="mock-row"><span class="mock-icon">01</span><div><b>Répondez aux questions</b><small>Une question à la fois</small></div><span class="mock-check">✓</span></div>
+      <div class="mock-row"><span class="mock-icon">02</span><div><b>Gérez votre temps</b><small>Chronomètre visible</small></div><span class="mock-check">✓</span></div>
+      <div class="mock-row"><span class="mock-icon">03</span><div><b>Consultez votre résultat</b><small>Correction et explications</small></div><span class="mock-check">✓</span></div>
+      <div class="card-decoration"></div>
+    </div>
+  </section>
+
+  <section *ngIf="screen === 'setup'" class="setup-wrap">
+    <button class="back-link" (click)="screen='home'">← Retour à l’accueil</button>
+    <div class="section-heading"><div class="eyebrow">CONFIGURATION</div><h1>Votre examen blanc</h1><p>Choisissez votre démarche et le nombre de questions.</p></div>
+    <div class="setup-grid">
+      <div class="setup-panel">
+        <h2>1. Type de démarche</h2>
+        <label class="choice-card" [class.selected]="examType==='CSP'">
+          <input type="radio" name="exam" value="CSP" [checked]="examType==='CSP'" (change)="examType='CSP'">
+          <span class="radio-custom"></span><span class="choice-text"><b>Carte de séjour pluriannuelle</b><small>Première carte de séjour pluriannuelle</small></span><span class="choice-arrow">↗</span>
+        </label>
+        <label class="choice-card" [class.selected]="examType==='CR'">
+          <input type="radio" name="exam" value="CR" [checked]="examType==='CR'" (change)="examType='CR'">
+          <span class="radio-custom"></span><span class="choice-text"><b>Carte de résident</b><small>Carte de résident de 10 ans</small></span><span class="choice-arrow">↗</span>
+        </label>
+        <label class="choice-card" [class.selected]="examType==='NAT'">
+          <input type="radio" name="exam" value="NAT" [checked]="examType==='NAT'" (change)="examType='NAT'">
+          <span class="radio-custom"></span><span class="choice-text"><b>Naturalisation</b><small>Acquisition de la nationalité française</small></span><span class="choice-arrow">↗</span>
+        </label>
+      </div>
+      <div class="setup-panel count-panel">
+        <h2>2. Nombre de questions</h2>
+        <div class="count-options">
+          <button class="count-option" [class.selected]="questionCount===20" (click)="questionCount=20"><strong>20</strong><span>questions</span><small>22 min 30</small></button>
+          <button class="count-option" [class.selected]="questionCount===40" (click)="questionCount=40"><strong>40</strong><span>questions</span><small>45 minutes</small><em>Format officiel</em></button>
+        </div>
+        <div class="info-note"><span>i</span><p>Le format officiel de l’examen est de 40 questions en 45 minutes. Le format 20 questions est une simulation courte avec une durée proportionnelle.</p></div>
+        <div class="error-message" *ngIf="error">{{error}}</div>
+        <button class="primary-btn full-btn" [disabled]="loading" (click)="startExam()">{{loading ? 'Chargement…' : 'Démarrer l’examen'}} <span>→</span></button>
+      </div>
+    </div>
+    <p class="disclaimer">Les réponses et explications du jeu de démonstration sont pédagogiques et indépendantes. Elles ne constituent pas un corrigé officiel du ministère.</p>
+  </section>
+
+  <section *ngIf="screen === 'exam' && current" class="exam-wrap">
+    <div class="exam-head">
+      <div><div class="eyebrow">EXAMEN BLANC · {{examType}}</div><h1>{{examNames[examType]}}</h1></div>
+      <div class="timer-box" [class.urgent]="secondsLeft <= 300"><span class="timer-caption">TEMPS RESTANT</span><strong>◷ {{timeLabel}}</strong></div>
+    </div>
+    <div class="progress-meta"><span>Question {{currentIndex + 1}} <small>sur {{questions.length}}</small></span><span>{{answeredCount}} réponse(s) renseignée(s)</span></div>
+    <div class="progress-track"><div class="progress-fill" [style.width.%]="progress"></div></div>
+    <article class="question-panel">
+      <div class="question-meta"><span class="question-number">QUESTION {{(currentIndex+1).toString().padStart(2,'0')}}</span><span class="theme-tag">{{current.theme}}</span></div>
+      <h2>{{current.question}}</h2>
+      <p class="instruction">Sélectionnez une seule réponse.</p>
+      <div class="options-list">
+        <button *ngFor="let option of current.options; let i=index" class="answer-option" [class.chosen]="answers[currentIndex].selectedIndex===i" (click)="selectOption(i)">
+          <span class="option-letter">{{['A','B','C','D'][i]}}</span><span class="option-label">{{option}}</span><span class="option-radio"></span>
+        </button>
+      </div>
+    </article>
+    <div class="exam-actions">
+      <button class="secondary-btn" (click)="previous()" [disabled]="currentIndex===0">← Précédente</button>
+      <span class="autosave-note">Vos réponses restent dans cette session.</span>
+      <button class="primary-btn" (click)="next()">{{currentIndex===questions.length-1 ? 'Terminer l’examen' : 'Question suivante'}} <span>→</span></button>
+    </div>
+    <div class="finish-row"><button class="text-btn" (click)="confirmFinish()">Terminer l’examen maintenant</button></div>
+  </section>
+
+  <section *ngIf="screen === 'results'" class="results-wrap">
+    <div class="result-hero">
+      <div class="eyebrow">EXAMEN TERMINÉ</div>
+      <h1>Votre résultat</h1>
+      <div class="score-circle" [class.fail]="!passed"><strong>{{correctCount}}</strong><span>/ {{answers.length}}</span></div>
+      <div class="result-status" [class.fail-text]="!passed">{{passed ? 'Seuil de réussite atteint' : 'Seuil de réussite non atteint'}}</div>
+      <p>{{scorePercent}} % de bonnes réponses · {{unansweredCount}} sans réponse</p>
+      <div class="result-bar"><span [style.width.%]="scorePercent"></span></div>
+      <button class="primary-btn" (click)="restart()">Revenir à l’accueil <span>→</span></button>
+    </div>
+    <div class="review-heading"><div><div class="eyebrow">CORRECTION</div><h2>Détail de vos réponses</h2></div><div class="review-legend"><span class="good-dot"></span> Bonne réponse <span class="bad-dot"></span> Mauvaise / sans réponse</div></div>
+    <article class="review-card" *ngFor="let record of answers; let i=index; trackBy: trackById">
+      <div class="review-top"><span>QUESTION {{(i+1).toString().padStart(2,'0')}}</span><span class="review-state" [class.good]="record.selectedIndex===record.question.correctIndex">{{record.selectedIndex===record.question.correctIndex ? 'Bonne réponse' : 'À revoir'}}</span></div>
+      <h3>{{record.question.question}}</h3>
+      <div class="review-answer"><small>VOTRE RÉPONSE</small><p [class.wrong-answer]="record.selectedIndex!==record.question.correctIndex">{{record.selectedIndex===null ? 'Aucune réponse' : record.question.options[record.selectedIndex]}}</p></div>
+      <div class="review-answer correct-answer"><small>BONNE RÉPONSE</small><p>{{record.question.options[record.question.correctIndex]}}</p></div>
+      <p class="explanation">{{record.question.explanation}}</p>
+    </article>
+    <button class="primary-btn full-btn" (click)="restart()">Nouvel examen</button>
+  </section>
+</main>
+
+<footer><span>© 2026 CiviquePrep</span><span>Outil indépendant de préparation · Non affilié au ministère de l’Intérieur</span></footer>
