@@ -1,0 +1,576 @@
+[
+  {
+    "id": "CR-001",
+    "theme": "Principes et valeurs de la République",
+    "question": "Quelle est la devise de la République française ?",
+    "options": [
+      "Force, Honneur, Patrie",
+      "Paix, Ordre, Progrès",
+      "Unité, Travail, Justice",
+      "Liberté, Égalité, Fraternité"
+    ],
+    "correctIndex": 3,
+    "explanation": "La devise républicaine est « Liberté, Égalité, Fraternité ».",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-002",
+    "theme": "Principes et valeurs de la République",
+    "question": "Quelles sont les couleurs du drapeau français ?",
+    "options": [
+      "Bleu, blanc et vert",
+      "Vert, blanc et rouge",
+      "Bleu, jaune et rouge",
+      "Bleu, blanc et rouge"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le drapeau tricolore est bleu, blanc et rouge.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-003",
+    "theme": "Principes et valeurs de la République",
+    "question": "Quel est l'hymne national français ?",
+    "options": [
+      "L'Internationale",
+      "La Marseillaise",
+      "Le Chant du départ",
+      "Le Temps des cerises"
+    ],
+    "correctIndex": 1,
+    "explanation": "La Marseillaise est l'hymne national de la France.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-004",
+    "theme": "Principes et valeurs de la République",
+    "question": "Que signifie la laïcité en France ?",
+    "options": [
+      "L'obligation d'avoir une religion",
+      "L'interdiction de toute religion",
+      "La supériorité d'une religion",
+      "La neutralité de l'État envers les religions et la liberté de conscience"
+    ],
+    "correctIndex": 3,
+    "explanation": "La laïcité garantit la liberté de conscience et la neutralité de l'État.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-005",
+    "theme": "Principes et valeurs de la République",
+    "question": "Quel symbole représente la République française sous les traits d'une femme ?",
+    "options": [
+      "La Liberté guidant le peuple",
+      "Marianne",
+      "La République éternelle",
+      "Jeanne d'Arc"
+    ],
+    "correctIndex": 1,
+    "explanation": "Marianne est une figure symbolique de la République.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-006",
+    "theme": "Principes et valeurs de la République",
+    "question": "Quel est le principe d'égalité devant la loi ?",
+    "options": [
+      "La loi s'applique de la même manière à toutes et tous",
+      "Les citoyens ont tous le même métier",
+      "Les élus ne sont jamais concernés par la loi",
+      "Les peines sont toujours identiques"
+    ],
+    "correctIndex": 0,
+    "explanation": "L'égalité devant la loi interdit les privilèges et les discriminations injustifiées.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-007",
+    "theme": "Principes et valeurs de la République",
+    "question": "La liberté d'expression permet-elle d'insulter ou de menacer quelqu'un ?",
+    "options": [
+      "Oui, uniquement sur Internet",
+      "Non, elle connaît des limites prévues par la loi",
+      "Non, toute critique est interdite",
+      "Oui, sans aucune limite"
+    ],
+    "correctIndex": 1,
+    "explanation": "La liberté d'expression est protégée mais ne permet pas les menaces, injures ou diffamations.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-008",
+    "theme": "Principes et valeurs de la République",
+    "question": "Quel texte proclame les droits fondamentaux en 1789 ?",
+    "options": [
+      "La Déclaration des droits de l'homme et du citoyen",
+      "La Constitution de 1958",
+      "Le traité de Maastricht",
+      "Le Code civil"
+    ],
+    "correctIndex": 0,
+    "explanation": "La Déclaration des droits de l'homme et du citoyen a été adoptée en 1789.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-009",
+    "theme": "Système institutionnel et politique",
+    "question": "Qui est le chef de l'État en France ?",
+    "options": [
+      "Le président de la République",
+      "Le maire de Paris",
+      "Le président du Sénat",
+      "Le Premier ministre"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le président de la République est le chef de l'État.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-010",
+    "theme": "Système institutionnel et politique",
+    "question": "Qui dirige l'action du Gouvernement ?",
+    "options": [
+      "Le préfet",
+      "Le Premier ministre",
+      "Le président de l'Assemblée nationale",
+      "Le président du Conseil constitutionnel"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le Premier ministre dirige l'action du Gouvernement.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-011",
+    "theme": "Système institutionnel et politique",
+    "question": "Où siège l'Assemblée nationale ?",
+    "options": [
+      "Au palais de l'Élysée",
+      "Au Palais-Bourbon, à Paris",
+      "Au palais du Luxembourg",
+      "À Matignon"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'Assemblée nationale siège au Palais-Bourbon.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-012",
+    "theme": "Système institutionnel et politique",
+    "question": "Quel est le rôle principal du Parlement ?",
+    "options": [
+      "Voter la loi et contrôler le Gouvernement",
+      "Organiser les élections municipales",
+      "Rendre les décisions de justice",
+      "Diriger les communes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le Parlement, composé de l'Assemblée nationale et du Sénat, vote la loi et contrôle le Gouvernement.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-013",
+    "theme": "Système institutionnel et politique",
+    "question": "Combien de départements compte la France ?",
+    "options": [
+      "96",
+      "101",
+      "95",
+      "110"
+    ],
+    "correctIndex": 1,
+    "explanation": "La France compte 101 départements, dont 5 départements d'outre-mer.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-014",
+    "theme": "Système institutionnel et politique",
+    "question": "Qui représente l'État dans un département ?",
+    "options": [
+      "Le député",
+      "Le maire de la commune principale",
+      "Le préfet",
+      "Le président du conseil départemental"
+    ],
+    "correctIndex": 2,
+    "explanation": "Le préfet représente l'État et le Gouvernement dans le département.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-015",
+    "theme": "Système institutionnel et politique",
+    "question": "À quel âge peut-on voter aux élections en France ?",
+    "options": [
+      "18 ans",
+      "21 ans",
+      "17 ans",
+      "16 ans"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le droit de vote est ouvert à 18 ans, sous réserve des conditions légales.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-016",
+    "theme": "Système institutionnel et politique",
+    "question": "Quelle institution contrôle la conformité des lois à la Constitution ?",
+    "options": [
+      "Le Sénat",
+      "La Cour des comptes",
+      "Le Conseil d'État uniquement",
+      "Le Conseil constitutionnel"
+    ],
+    "correctIndex": 3,
+    "explanation": "Le Conseil constitutionnel contrôle notamment la constitutionnalité des lois.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-017",
+    "theme": "Droits et devoirs",
+    "question": "Quelle est la durée habituelle du mandat présidentiel ?",
+    "options": [
+      "5 ans",
+      "6 ans",
+      "7 ans",
+      "4 ans"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le président de la République est élu pour cinq ans : c'est le quinquennat.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-018",
+    "theme": "Droits et devoirs",
+    "question": "L'instruction est-elle obligatoire en France ?",
+    "options": [
+      "De 2 à 18 ans",
+      "De 3 à 16 ans",
+      "De 6 à 14 ans",
+      "Uniquement à partir de 6 ans"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'instruction est obligatoire pour les enfants de 3 à 16 ans.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-019",
+    "theme": "Droits et devoirs",
+    "question": "Que faire si l'on est témoin de violences mettant une personne en danger immédiat ?",
+    "options": [
+      "Ne rien faire",
+      "Appeler les secours ou la police",
+      "Attendre plusieurs jours",
+      "Publier une vidéo sur les réseaux sociaux"
+    ],
+    "correctIndex": 1,
+    "explanation": "En cas de danger immédiat, il faut alerter les services d'urgence.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-020",
+    "theme": "Droits et devoirs",
+    "question": "Le paiement des impôts sert notamment à financer :",
+    "options": [
+      "Uniquement les entreprises privées",
+      "Les dépenses personnelles des élus",
+      "Les services publics et les dépenses collectives",
+      "Uniquement les associations sportives"
+    ],
+    "correctIndex": 2,
+    "explanation": "Les impôts financent les services publics et les politiques publiques.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-021",
+    "theme": "Droits et devoirs",
+    "question": "Le mariage en France doit-il être librement consenti ?",
+    "options": [
+      "Seulement pour les personnes majeures de 25 ans",
+      "Oui, le consentement des deux personnes est indispensable",
+      "Non, la famille peut décider seule",
+      "Seulement si les époux ont la même nationalité"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le consentement libre des deux futurs époux est une condition essentielle du mariage.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-022",
+    "theme": "Droits et devoirs",
+    "question": "Que signifie le principe de présomption d'innocence ?",
+    "options": [
+      "La police ne peut jamais enquêter",
+      "Toute personne arrêtée est coupable",
+      "Une personne est considérée innocente tant que sa culpabilité n'est pas légalement établie",
+      "Une personne doit prouver son innocence"
+    ],
+    "correctIndex": 2,
+    "explanation": "La présomption d'innocence protège toute personne mise en cause.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-023",
+    "theme": "Droits et devoirs",
+    "question": "La discrimination est-elle autorisée dans l'accès à l'emploi ?",
+    "options": [
+      "Oui, selon l'origine",
+      "Oui, selon le sexe",
+      "Oui, si l'employeur le souhaite",
+      "Non, elle est interdite par la loi"
+    ],
+    "correctIndex": 3,
+    "explanation": "Les discriminations fondées sur des critères interdits par la loi sont sanctionnées.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-024",
+    "theme": "Droits et devoirs",
+    "question": "Quel numéro permet de joindre les pompiers en France ?",
+    "options": [
+      "15",
+      "119",
+      "18",
+      "17"
+    ],
+    "correctIndex": 2,
+    "explanation": "Le 18 permet de joindre les sapeurs-pompiers. Le 112 est aussi le numéro d'urgence européen.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-025",
+    "theme": "Histoire, géographie et culture",
+    "question": "En quelle année débute la Révolution française ?",
+    "options": [
+      "1715",
+      "1815",
+      "1848",
+      "1789"
+    ],
+    "correctIndex": 3,
+    "explanation": "La Révolution française débute en 1789.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-026",
+    "theme": "Histoire, géographie et culture",
+    "question": "Quel jour est la fête nationale française ?",
+    "options": [
+      "Le 11 novembre",
+      "Le 1er mai",
+      "Le 14 juillet",
+      "Le 8 mai"
+    ],
+    "correctIndex": 2,
+    "explanation": "La fête nationale est célébrée le 14 juillet.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-027",
+    "theme": "Histoire, géographie et culture",
+    "question": "En quelle année la Ve République est-elle fondée ?",
+    "options": [
+      "1946",
+      "1968",
+      "1958",
+      "1870"
+    ],
+    "correctIndex": 2,
+    "explanation": "La Constitution de la Ve République est entrée en vigueur en 1958.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-028",
+    "theme": "Histoire, géographie et culture",
+    "question": "Quel fleuve traverse Paris ?",
+    "options": [
+      "La Loire",
+      "La Garonne",
+      "Le Rhône",
+      "La Seine"
+    ],
+    "correctIndex": 3,
+    "explanation": "La Seine traverse Paris.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-029",
+    "theme": "Histoire, géographie et culture",
+    "question": "Quelle est la capitale de la France ?",
+    "options": [
+      "Bordeaux",
+      "Paris",
+      "Lyon",
+      "Marseille"
+    ],
+    "correctIndex": 1,
+    "explanation": "Paris est la capitale de la France.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-030",
+    "theme": "Histoire, géographie et culture",
+    "question": "Quel événement commémore-t-on le 8 mai ?",
+    "options": [
+      "L'armistice de 1918",
+      "La prise de la Bastille",
+      "La fin de la Seconde Guerre mondiale en Europe en 1945",
+      "La fin de la Première Guerre mondiale"
+    ],
+    "correctIndex": 2,
+    "explanation": "Le 8 mai commémore la victoire de 1945 en Europe.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-031",
+    "theme": "Histoire, géographie et culture",
+    "question": "Quel événement commémore-t-on le 11 novembre ?",
+    "options": [
+      "La fête nationale",
+      "La Déclaration des droits de l'homme",
+      "L'armistice de 1918",
+      "La fin de la Seconde Guerre mondiale"
+    ],
+    "correctIndex": 2,
+    "explanation": "Le 11 novembre rend hommage à l'armistice de 1918 et aux morts pour la France.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-032",
+    "theme": "Histoire, géographie et culture",
+    "question": "Quel est le plus haut sommet des Alpes, à la frontière franco-italienne ?",
+    "options": [
+      "Le pic du Midi",
+      "Le puy de Dôme",
+      "Le mont Blanc",
+      "Le mont Ventoux"
+    ],
+    "correctIndex": 2,
+    "explanation": "Le mont Blanc est le plus haut sommet des Alpes.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-033",
+    "theme": "Histoire, géographie et culture",
+    "question": "Qui a écrit Les Misérables ?",
+    "options": [
+      "Molière",
+      "Victor Hugo",
+      "Albert Camus",
+      "Émile Zola"
+    ],
+    "correctIndex": 1,
+    "explanation": "Victor Hugo est l'auteur du roman Les Misérables.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-034",
+    "theme": "Vivre dans la société française",
+    "question": "Quelle langue est la langue officielle de la République ?",
+    "options": [
+      "L'anglais",
+      "Toutes les langues régionales à égalité",
+      "Le latin",
+      "Le français"
+    ],
+    "correctIndex": 3,
+    "explanation": "L'article 2 de la Constitution dispose que la langue de la République est le français.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-035",
+    "theme": "Vivre dans la société française",
+    "question": "Quel comportement est attendu dans un service public ?",
+    "options": [
+      "Passer devant les autres usagers",
+      "Respecter les agents et les autres usagers",
+      "Menacer les agents en cas de désaccord",
+      "Refuser toute règle commune"
+    ],
+    "correctIndex": 1,
+    "explanation": "Les services publics reposent notamment sur le respect mutuel et l'égalité de traitement.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-036",
+    "theme": "Vivre dans la société française",
+    "question": "Que doit-on faire face à un courrier officiel demandant une démarche dans un délai ?",
+    "options": [
+      "Le jeter après ouverture",
+      "L'ignorer systématiquement",
+      "Lire les consignes et respecter le délai indiqué",
+      "Répondre uniquement sur les réseaux sociaux"
+    ],
+    "correctIndex": 2,
+    "explanation": "Il faut lire attentivement les demandes officielles et respecter les délais applicables.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-037",
+    "theme": "Vivre dans la société française",
+    "question": "Quel document permet généralement de justifier son identité en France ?",
+    "options": [
+      "Une facture de téléphone uniquement",
+      "Une carte nationale d'identité ou un passeport",
+      "Une carte de bibliothèque uniquement",
+      "Une carte de fidélité"
+    ],
+    "correctIndex": 1,
+    "explanation": "La carte nationale d'identité et le passeport sont des documents officiels d'identité.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-038",
+    "theme": "Vivre dans la société française",
+    "question": "En cas de changement d'adresse, que faut-il faire pour les démarches administratives concernées ?",
+    "options": [
+      "Attendre le renouvellement de tous ses papiers",
+      "Signaler le changement aux organismes concernés",
+      "Ne jamais le signaler",
+      "Changer uniquement son numéro de téléphone"
+    ],
+    "correctIndex": 1,
+    "explanation": "Il faut mettre à jour son adresse auprès des organismes qui doivent disposer de cette information.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-039",
+    "theme": "Vivre dans la société française",
+    "question": "Quel est le numéro d'urgence européen ?",
+    "options": [
+      "115",
+      "114",
+      "112",
+      "118"
+    ],
+    "correctIndex": 2,
+    "explanation": "Le 112 est le numéro d'urgence européen, utilisable dans l'Union européenne.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-040",
+    "theme": "Vivre dans la société française",
+    "question": "Quel numéro peut être utilisé par une personne sourde ou malentendante pour les urgences ?",
+    "options": [
+      "17",
+      "114",
+      "15",
+      "18"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le 114 est le numéro d'urgence accessible notamment par SMS, application ou visiophonie.",
+    "sourceType": "pedagogical"
+  },
+  {
+    "id": "CR-041",
+    "theme": "Vivre dans la société française",
+    "question": "Le respect des règles de circulation concerne-t-il les cyclistes ?",
+    "options": [
+      "Uniquement la nuit",
+      "Oui, les cyclistes doivent respecter le Code de la route",
+      "Non, jamais",
+      "Seulement hors des villes"
+    ],
+    "correctIndex": 1,
+    "explanation": "Les cyclistes sont des usagers de la route et doivent respecter les règles applicables.",
+    "sourceType": "pedagogical"
+  }
+]
